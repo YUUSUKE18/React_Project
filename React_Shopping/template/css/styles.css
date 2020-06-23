@@ -38,6 +38,7 @@ a:hover {
 
 .header h1 {
   color: rgb(255, 255, 255);
+  display: inline;
 }
 
 .header .header-links a {
@@ -98,6 +99,29 @@ a:hover {
 
 .product-rating {
   margin-bottom: 1rem;
+}
+
+/* sidebar */
+.brand button {
+  font-size: 2rem;
+  padding: 0.4rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline;
+}
+
+.sidebar {
+  position: fixed;
+  transform: translateX(-20rem);
+  width: 20rem;
+  background-color: #808080;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  transition: ease-in 0.3s;
 }
 
 .footer {

@@ -10,6 +10,9 @@
     <div class="grid-container">
       <header class="header">
         <div class="brand">
+          <button onClick="sidebarOpen()">
+            &#9776;
+          </button>
           <a href="/"><h1>React Shopping</h1></a>
         </div>
         <div class="header-links">
@@ -17,6 +20,23 @@
           <a href="/signin">SIGNIN</a>
         </div>
       </header>
+      <aside class="sidebar">
+        <h3>React Shopping | Category</h3>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Men</a>
+          </li>
+          <li>
+            <a href="/">Women</a>
+          </li>
+          <li>
+            <a href="/">Kids</a>
+          </li>
+        </ul>
+      </aside>
       <main class="main">
         <div class="content">
           <ul class="products">
@@ -87,5 +107,10 @@
         All Right Reserved @ React Shopping
       </footer>
     </div>
+    <script>
+      function sidebarOpen() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+    </script>
   </body>
 </html>
