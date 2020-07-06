@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import News from "./components/News";
 import Header from "./layout/Header";
 
-import newsapi from "./helpers/newsApi";
+import newsapi from "../helpers/newsApi";
 
 const Business = () => {
   const [data, setData] = useState([]);
@@ -45,10 +45,10 @@ const Business = () => {
     };
   }, []);
   return (
-    <div>
+    <>
       <Header />
       <News category="Business" data={data} />
-    </div>
+    </>
   );
 };
 
