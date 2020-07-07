@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import data from "data";
 
 function App() {
   const sidebarOpen = () => {
@@ -45,66 +46,25 @@ function App() {
       <main className="main">
         <div className="content">
           <ul className="products">
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/product1.jpg"
-                  alt="product1"
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
+            {data.products.map((product) => {
+              <li>
+                <div className="product">
+                  <img
+                    className="product-image"
+                    src={product.image}
+                    alt="product1"
+                  />
+                  <div className="product-name">
+                    <a href="product.html">{product.name}</a>
+                  </div>
+                  <div className="product-brand">{product.brand}</div>
+                  <div className="product-price">$ {product.price}</div>
+                  <div className="product-rating">
+                    {produc.rating} Stars {product.review}
+                  </div>
                 </div>
-                <div className="product-brand">None</div>
-                <div className="product-price">$39</div>
-                <div className="product-rating">4.5 Stars</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/product1.jpg"
-                  alt="product1"
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">None</div>
-                <div className="product-price">$39</div>
-                <div className="product-rating">4.5 Stars</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/product1.jpg"
-                  alt="product1"
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">None</div>
-                <div className="product-price">$39</div>
-                <div className="product-rating">4.5 Stars</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/product1.jpg"
-                  alt="product1"
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">None</div>
-                <div className="product-price">$39</div>
-                <div className="product-rating">4.5 Stars</div>
-              </div>
-            </li>
+              </li>;
+            })}
           </ul>
         </div>
       </main>
