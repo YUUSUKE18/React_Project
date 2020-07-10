@@ -1,6 +1,7 @@
-export default data = {
+export default {
   products: [
     {
+      _id: "005",
       name: "Slim Shirts",
       category: "Men",
       image: "/images/product1.jpg",
@@ -10,6 +11,7 @@ export default data = {
       reviews: 10,
     },
     {
+      _id: "123",
       name: "Fit Shirts",
       category: "Men",
       image: "/images/product1.jpg",
@@ -19,6 +21,7 @@ export default data = {
       reviews: 10,
     },
     {
+      _id: "101",
       name: "Big Shirts",
       category: "Men",
       image: "/images/product1.jpg",
