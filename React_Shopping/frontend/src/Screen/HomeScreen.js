@@ -7,17 +7,17 @@ const HomeScreen = (props) => {
     <div>
       <ul className="products">
         {data.products.map((product) => (
-          <li>
+          <li key={product.id}>
             <div className="product">
-              <Link to={"/product/" + product._id}>
+              <Link to={"/product/" + product.id}>
                 <img
                   className="product-image"
                   src={product.image}
-                  alt="product1"
+                  alt="product"
                 />
               </Link>
               <div className="product-name">
-                <Link to={"/product/" + product._id}>{product.name}</Link>
+                <Link to={"/product/" + product.id}>{product.name}</Link>
               </div>
               <div className="product-brand">{product.brand}</div>
               <div className="product-price">$ {product.price}</div>

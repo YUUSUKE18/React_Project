@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      _id: "005",
+      id: "1",
       name: "Slim Shirts",
       category: "Men",
       image: "/images/product1.jpg",
@@ -11,7 +11,7 @@ export default {
       reviews: 10,
     },
     {
-      _id: "123",
+      id: "2",
       name: "Fit Shirts",
       category: "Men",
       image: "/images/product1.jpg",
@@ -21,7 +21,7 @@ export default {
       reviews: 10,
     },
     {
-      _id: "101",
+      id: "3",
       name: "Big Shirts",
       category: "Men",
       image: "/images/product1.jpg",
