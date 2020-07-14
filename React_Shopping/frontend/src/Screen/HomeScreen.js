@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import data from "../data/data";
+import axios from "axios";
 
 const HomeScreen = (props) => {
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    //real run
+    const fetchData = async () => {
+      const { data } = await axios.get("/api/product");
+      setProduct(data);
+    };
+    fetchData();
+    return () => {
+      //cleanup;
+    };
+  }, []);
   return (
     <div>
       <ul className="products">
