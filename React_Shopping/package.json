@@ -30,7 +30,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon --watch backend ---exec babel-node backend/server.js"
+    "start": "nodemon --watch backend --exec babel-node backend/server.js"
   },
   "author": "",
   "license": "MIT"
