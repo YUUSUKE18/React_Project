@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
-import HomeScreen from "./Screen/HomeScreen";
-import ProductScreen from "./Screen/ProductScreen";
+import HomeScreen from "./screen/HomeScreen";
+import ProductScreen from "./screen/ProductScreen";
 
 function App() {
   const sidebarOpen = () => {
